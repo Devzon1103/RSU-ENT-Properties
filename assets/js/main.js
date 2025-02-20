@@ -260,6 +260,38 @@
     ]
   });
   // ========================= Property Five Slick Slider Js End ===================
+  
+  // ========================= Property Five Slick Slider Js Start ==============
+  $('.property-four-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        }
+      }
+    ]
+  });
+  // ========================= Property Five Slick Slider Js End ===================
 
   // ========================= Counter Up Js End ===================
   const counterUp = window.counterUp.default;
